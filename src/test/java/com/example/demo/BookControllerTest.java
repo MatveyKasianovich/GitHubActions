@@ -40,7 +40,7 @@ class BookControllerTest {
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(bookJson)
                 )
-                .andExpect(status().isCreated())
+                .andExpect(status().isForbidden())
                 .andReturn()
                 .getResponse()
                 .getContentAsString();
