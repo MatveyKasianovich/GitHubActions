@@ -40,7 +40,7 @@ class BookControllerTest {
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(bookJson)
                 )
-                .andExpect(status().isForbidden())//неправильный статус для проверки
+                .andExpect(status().isCreated())
                 .andReturn()
                 .getResponse()
                 .getContentAsString();
