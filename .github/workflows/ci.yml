@@ -2,7 +2,7 @@ name: CI
 
 on:
   pull_request:
-    branches: [master]  # ← меняем main на master
+    branches: [master]
 
 jobs:
   build-and-test:
